@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="textView_Title">Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="editText_Num1">Insert a number</string>
+    <string name="editText_Num2">Insert a second number</string>
+    <string name="button_Result">Get Result</string>
+    <string name="textView_Result">x + x = </string>
+</resources>
