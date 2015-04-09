@@ -17,10 +17,6 @@ public class MainActivity extends ActionBarActivity {
     Double result;
 
     RadioGroup radioGroup_Mode;
-    RadioButton rButton_Plus;
-    RadioButton rButton_Minus;
-    RadioButton rButton_Mult;
-    RadioButton rButton_Divide;
     String mode;
 
     @Override
@@ -37,30 +33,23 @@ public class MainActivity extends ActionBarActivity {
 
         radioGroup_Mode = (RadioGroup)findViewById(R.id.radioGroup_Mode);
         radioGroup_Mode.check(R.id.rButton_Plus);
-
-        rButton_Plus = (RadioButton)findViewById(R.id.rButton_Plus);
-        rButton_Minus = (RadioButton)findViewById(R.id.rButton_Minus);
-        rButton_Mult = (RadioButton)findViewById(R.id.rButton_Mult);
-        rButton_Divide = (RadioButton)findViewById(R.id.rButton_Divide);
     }
 
     public String getMode()
     {
-        if (rButton_Plus.isChecked())
+        switch(radioGroup_Mode.getCheckedRadioButtonId())
         {
-            return mode = "plus";
-        }
-        else if (rButton_Minus.isChecked())
-        {
-            return mode = "minus";
-        }
-        else if (rButton_Mult.isChecked())
-        {
-            return mode = "mult";
-        }
-        else if (rButton_Divide.isChecked())
-        {
-            return  mode = "divide";
+            case R.id.rButton_Plus:
+               return mode = "plus";
+
+            case R.id.rButton_Minus:
+               return mode = "minus";
+
+            case R.id.rButton_Mult:
+               return mode = "mult";
+
+            case R.id.rButton_Divide:
+               return mode = "divide";
         }
         return mode = null;
     }
