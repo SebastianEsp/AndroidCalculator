@@ -5,5 +5,5 @@
     <string name="editText_Num1">Insert a number</string>
     <string name="editText_Num2">Insert a second number</string>
     <string name="button_Result">Get Result</string>
-    <string name="textView_Result">x + x = </string>
+    <string name="textView_Result"></string>
 </resources>
