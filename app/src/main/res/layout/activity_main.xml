@@ -62,33 +62,42 @@
         android:gravity="center_horizontal"
         >
 
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/radioGroup_Mode"
+            >
+
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:paddingTop="20dp"
-            android:id="@+id/radioButton1"
+            android:id="@+id/rButton_Plus"
             android:layout_gravity="center_horizontal" />
 
         <RadioButton
             android:paddingTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton2"
+            android:id="@+id/rButton_Minus"
             android:layout_gravity="center_horizontal" />
 
         <RadioButton
             android:paddingTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton3"
+            android:id="@+id/rButton_Mult"
             android:layout_gravity="center_horizontal" />
 
         <RadioButton
             android:paddingTop="20dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/radioButton4"
+            android:id="@+id/rButton_Divide"
             android:layout_gravity="center_horizontal" />
+
+        </RadioGroup>
 
     </LinearLayout>
 
